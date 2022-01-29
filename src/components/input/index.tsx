@@ -1,4 +1,4 @@
-import { FC } from "react";
-import { InputProps } from "./types";
+import { FC } from 'react';
+import { InputProps } from './types';
 
 export const Input: FC<InputProps> = (props) => <input {...props} />;
