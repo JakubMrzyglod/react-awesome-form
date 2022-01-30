@@ -1,4 +1,8 @@
 import { FC } from 'react';
-import { InputProps } from './types';
+import { InputWrapper } from '../wrapper';
+import { InputField } from './styled/input-field';
+import { TextInputProps } from './types';
 
-export const Input: FC<InputProps> = (props) => <input {...props} />;
+export const Input: FC<TextInputProps> = props => (
+  <InputWrapper {...{ ...props, Component: InputField }} />
+);
